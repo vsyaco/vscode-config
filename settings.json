@@ -1,0 +1,160 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+    "telemetry.telemetryLevel": "off",
+    "workbench.activityBar.location": "top",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.enableNeovim": true,
+    "vim.neovimUseConfigFile": true,
+    "vim.neovimConfigPath": "~/.config/nvim/init.vim",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "$"
+            ],
+            "after": [
+                "g",
+                "_"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "_"
+            ],
+            "after": [
+                "$"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "n",
+                "h"
+            ],
+            "commands": [
+                ":nohl",
+            ]
+        },
+        {
+            "before": [
+                "f",
+                "w"
+            ],
+            "commands": [
+                "editor.action.format",
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "p",
+                "d"
+            ],
+            "commands": [
+                "editor.action.peekDefinition"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "p",
+                "i"
+            ],
+            "commands": [
+                "editor.action.peekImplementation"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "q"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "t"
+            ],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "p",
+                "t"
+            ],
+            "commands": [
+                "editor.action.peekTypeDefinition"
+            ]
+        },
+    ],
+    "breadcrumbs.enabled": false,
+    "workbench.sideBar.location": "right",
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path-mac": "/Users/vsyaco/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+        "vscode-kubernetes.helm-path-mac": "/Users/vsyaco/.vs-kubernetes/tools/helm/darwin-arm64/helm"
+    },
+    "php.validate.executablePath": "/opt/homebrew/bin/php",
+    "workbench.settings.applyToAllProfiles": [
+    
+    ]
+}
