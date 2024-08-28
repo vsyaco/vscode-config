@@ -24,6 +24,11 @@
         "when": "terminalFocus"
     },
     {
+        "key": "shift+k",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
         "command": "workbench.action.toggleSidebarVisibility",
         "key": "ctrl+e"
     },
@@ -41,16 +46,6 @@
         "command": "renameFile",
         "key": "r",
         "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "workbench.action.newWindow",
-        "when": "!explorerViewletFocus"
     },
     {
         "command": "deleteFile",
