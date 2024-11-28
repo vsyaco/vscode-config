@@ -1,4 +1,9 @@
-[
+[    
+    {
+        "key": "ctrl+f",
+        "command": "togglePeekWidgetFocus",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
     {
         "key": "ctrl+shift+a",
         "command": "workbench.action.terminal.focusNext",
