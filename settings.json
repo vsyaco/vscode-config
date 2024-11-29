@@ -30,6 +30,8 @@
         { "before": ["g", "_"], "after": ["$"] }
     ],
     "vim.normalModeKeyBindings": [
+        {"before": ["leader", "l", "s"], "commands": ["workbench.action.gotoSymbol"]},
+
         { "before": ["leader", "v"], "commands": [":vsplit"] }, 
         { "before": ["leader", "s"], "commands": [":split"] },
 
