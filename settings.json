@@ -1,15 +1,13 @@
 {
+    "workbench.colorTheme": "Tokyo Night",
     "window.commandCenter": true,
     "editor.fontSize": 16,
-    "workbench.colorTheme": "Default Light Modern",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
     // "http.proxyAuthorization": null,
     // "http.proxy": "http://",
     "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
     "editor.lineHeight": 1.7,
-    "scm.showIncomingChanges": "always",
-    "scm.showOutgoingChanges": "always",
     "editor.stickyScroll.enabled": false,
     "workbench.sideBar.location": "right",
     "editor.fontLigatures": true,
@@ -56,4 +54,5 @@
     ],
     "workbench.statusBar.visible": false,
     "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
 }
