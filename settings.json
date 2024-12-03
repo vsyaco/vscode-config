@@ -1,5 +1,6 @@
 {
     "workbench.colorTheme": "Tokyo Night",
+    "window.zoomLevel": 1,
     "window.commandCenter": false,
     "editor.fontSize": 16,
     "telemetry.telemetryLevel": "off",
