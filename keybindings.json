@@ -1,4 +1,4 @@
-[    
+[
     {
         "key": "ctrl+f",
         "command": "togglePeekWidgetFocus",
@@ -29,7 +29,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "shift+k",
+        "key": "ctrl+k",
         "command": "editor.action.showHover",
         "when": "editorTextFocus"
     },
@@ -45,6 +45,11 @@
     {
         "key": "n",
         "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
@@ -64,5 +69,5 @@
     {
         "key": "ctrl+z",
         "command": "workbench.action.toggleZenMode"
-    }
+    },
 ]

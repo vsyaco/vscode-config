@@ -32,7 +32,12 @@
         {"before": ["leader", "l", "s"], "commands": ["workbench.action.gotoSymbol"]},
         {"before": ["leader", "l", "r"], "commands": ["editor.action.rename"]},
         {"before": ["leader", "l", "s", "p"], "commands": ["workbench.action.showAllSymbols"]},
-
+        {"before": ["leader", "l", "c"], "commands": ["editor.action.quickFix"]},
+        {"before": ["leader", "leader"], "commands": ["editor.action.showHover"]},
+        
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },       
+ 
         { "before": ["leader", "v"], "commands": [":vsplit"] }, 
         { "before": ["leader", "s"], "commands": [":split"] },
 
@@ -59,4 +64,5 @@
     "editor.minimap.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
+    "workbench.activityBar.location": "top"
 }
