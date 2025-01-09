@@ -21,8 +21,8 @@
     "vim.visualModeKeyBindings": [
         { "before": [ ">" ], "commands": [ "editor.action.indentLines" ] },
         { "before": [ "<" ], "commands": [ "editor.action.outdentLines" ] },
-        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+        { "before": ["ctrl+h"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["ctrl+j"], "commands": ["editor.action.moveLinesUpAction"] },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         { "before": ["$"], "after": ["g", "_"] },
@@ -35,8 +35,8 @@
         {"before": ["leader", "l", "c"], "commands": ["editor.action.quickFix"]},
         {"before": ["leader", "leader"], "commands": ["editor.action.showHover"]},
         
-        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },       
+        { "before": ["ctrl+h"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["ctrl+j"], "commands": ["editor.action.moveLinesUpAction"] },       
  
         { "before": ["leader", "v"], "commands": [":vsplit"] }, 
         { "before": ["leader", "s"], "commands": [":split"] },
@@ -46,6 +46,7 @@
 
         { "before": ["g", "p", "d"], "commands": [ "editor.action.peekDefinition" ] },
         { "before": ["g", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] },
+        { "before": ["shift+k"], "commands": ["editor.action.showDefinitionPreviewHover"] },
         { "before": ["g", "i"], "commands": ["editor.action.goToImplementation"] },
         { "before": ["g", "p", "i"], "commands": ["editor.action.peekImplementation"] },
         { "before": ["g", "q"], "commands": ["editor.action.quickFix"] },
@@ -64,5 +65,10 @@
     "editor.minimap.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
-    "workbench.activityBar.location": "top"
+    "workbench.activityBar.location": "top",
+    "cursor.general.gitGraphIndexing": "enabled",
+    "git.autofetch": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "cursor-retrieval.canAttemptGithubLogin": false,
+    "supermaven.enable": {},
 }
