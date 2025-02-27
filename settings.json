@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Tokyo Night",
     "window.zoomLevel": 1,
     "window.commandCenter": false,
     "editor.fontSize": 16,
@@ -30,10 +29,9 @@
     ],
     "vim.normalModeKeyBindings": [
         {"before": ["leader", "l", "s"], "commands": ["workbench.action.gotoSymbol"]},
+        {"before": ["leader", "l", "p"], "commands": ["workbench.action.showAllSymbols"]},
         {"before": ["leader", "l", "r"], "commands": ["editor.action.rename"]},
-        {"before": ["leader", "l", "s", "p"], "commands": ["workbench.action.showAllSymbols"]},
         {"before": ["leader", "l", "c"], "commands": ["editor.action.quickFix"]},
-        {"before": ["leader", "leader"], "commands": ["editor.action.showHover"]},
         
         { "before": ["ctrl+h"], "commands": ["editor.action.moveLinesDownAction"] },
         { "before": ["ctrl+j"], "commands": ["editor.action.moveLinesUpAction"] },       
@@ -42,19 +40,18 @@
         { "before": ["leader", "s"], "commands": [":split"] },
 
         { "before": ["leader","n","h"],"commands": [":nohl"] },
-        { "before": ["f","f"], "commands": ["editor.action.format", "workbench.action.files.save"] },
+        { "before": ["leader","e"], "commands": ["editor.action.format", "workbench.action.files.save"] },
 
         { "before": ["g", "p", "d"], "commands": [ "editor.action.peekDefinition" ] },
-        { "before": ["g", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] },
+        { "before": ["g", "p", "t"], "commands": ["editor.action.peekTypeDefinition"] },
+        { "before": ["g", "p", "i"], "commands": ["editor.action.peekImplementation"] },
+
         { "before": ["shift+k"], "commands": ["editor.action.showDefinitionPreviewHover"] },
         { "before": ["g", "i"], "commands": ["editor.action.goToImplementation"] },
-        { "before": ["g", "p", "i"], "commands": ["editor.action.peekImplementation"] },
-        { "before": ["g", "q"], "commands": ["editor.action.quickFix"] },
         { "before": ["g", "r"], "commands": ["editor.action.referenceSearch.trigger"] },
         { "before": ["g", "t"], "commands": ["editor.action.goToTypeDefinition"] },
-        { "before": ["g", "p", "t"], "commands": ["editor.action.peekTypeDefinition"] },
 
-        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["leader", "p"], "commands": ["workbench.action.quickOpen"] },
 
         { "before": ["leader", "h"], "commands": ["workbench.action.focusLeftGroup"] },
         { "before": ["leader", "j"], "commands": ["workbench.action.focusBelowGroup"] },
@@ -66,9 +63,9 @@
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
     "workbench.activityBar.location": "top",
-    "cursor.general.gitGraphIndexing": "enabled",
     "git.autofetch": true,
     "diffEditor.ignoreTrimWhitespace": true,
+
+    "cursor.general.gitGraphIndexing": "enabled",
     "cursor-retrieval.canAttemptGithubLogin": false,
-    "supermaven.enable": {},
 }
