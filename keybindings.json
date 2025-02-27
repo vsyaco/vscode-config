@@ -1,5 +1,24 @@
 [
     {
+        "key":     "ctrl+shift+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key":     "ctrl+shift+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when":    "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus || terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+    },
+    {
         "key": "ctrl+f",
         "command": "togglePeekWidgetFocus",
         "when": "inReferenceSearchEditor || referenceSearchVisible"
@@ -67,10 +86,6 @@
         "command": "editor.emmet.action.matchTag"
     },
     {
-        "key": "ctrl+z",
-        "command": "workbench.action.toggleZenMode"
-    },
-    {
         "key": "ctrl+k",
         "command": "acceptSelectedSuggestion",
         "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
@@ -97,7 +112,7 @@
     },
     {
         "key": "tab",
-        "command": "-editor.action.acceptGPT4",
+        "command": "-editor.action.accept",
         "when": "hasGPT4Diff"
     },
     {
@@ -129,5 +144,30 @@
         "key": "tab",
         "command": "-insertNextSuggestion",
         "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
-    }
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
 ]
