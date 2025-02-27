@@ -112,7 +112,7 @@
     },
     {
         "key": "tab",
-        "command": "-editor.action.accept",
+        "command": "-editor.action.acceptGPT4",
         "when": "hasGPT4Diff"
     },
     {
