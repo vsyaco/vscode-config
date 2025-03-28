@@ -1,13 +1,22 @@
 [
     {
-        "key":     "ctrl+shift+`",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+g",
+    },
+    {
+        "command": "workbench.scm.focus",
+        "key": "ctrl+g",
+        "when": "!(focusedView == 'workbench.scm')"
+    },
+    {
+        "key": "ctrl+shift+`",
         "command": "workbench.action.terminal.focus",
         "when": "!terminalFocus"
     },
     {
-        "key":     "ctrl+shift+`",
+        "key": "ctrl+shift+`",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when":    "terminalFocus"
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+shift+n",
@@ -24,12 +33,12 @@
         "when": "inReferenceSearchEditor || referenceSearchVisible"
     },
     {
-        "key": "ctrl+shift+a",
+        "key": "ctrl+shift+]",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+shift+b",
+        "key": "ctrl+shift+[",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
@@ -59,11 +68,16 @@
     {
         "command": "workbench.files.action.focusFilesExplorer",
         "key": "ctrl+e",
-        "when": "editorTextFocus"
+        "when": "!(focusedView == 'workbench.explorer.fileView')"
     },
     {
-        "key": "n",
+        "key": "a",
         "command": "explorer.newFile",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "c",
+        "command": "filesExplorer.copy",
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
@@ -169,5 +183,49 @@
         "key": "ctrl+shift+e",
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "dockerContainers.focus"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "editor.cpp.disableenabled"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "editor.action.enableCppGlobally"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "workbench.action.terminal.scrollToPreviousCommand",
+        "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-workbench.action.terminal.scrollToPreviousCommand",
+        "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+    },
+    {
+        "key": "cmd+up",
+        "command": "breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
+    },
+    {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
+    },
+    {
+        "key": "cmd+o",
+        "command": "projectManager.listGitProjects#sideBarGit",
+    },
+    {
+        "key": "ctrl+=",
+        "command": "expand-selection-to-scope.expand",
     },
 ]
