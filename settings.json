@@ -1,10 +1,8 @@
 {
-    "workbench.editor.showTabs": "single",
     "window.zoomLevel": 1,
     "window.commandCenter": false,
     "editor.fontSize": 16,
-    // "http.proxyAuthorization": null,
-    // "http.proxy": "http://",
+    //"http.proxy": "http://user:password@host:port",
     "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
@@ -307,5 +305,5 @@
     ],
     "projectManager.filterOnFullPath": true,
     "projectManager.git.maxDepthRecursion": 3,
-    "projectManager.hg.maxDepthRecursion": 3
+    "workbench.editor.showTabs": "single"
 }
