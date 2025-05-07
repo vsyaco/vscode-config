@@ -63,11 +63,11 @@
     },
     {
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+e"
+        "key": "ctrl+b"
     },
     {
         "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+e",
+        "key": "ctrl+b",
         "when": "!(focusedView == 'workbench.explorer.fileView')"
     },
     {
@@ -81,8 +81,13 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "v",
+        "command": "filesExplorer.paste",
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
@@ -93,6 +98,11 @@
     {
         "command": "deleteFile",
         "key": "d",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
@@ -227,5 +237,21 @@
     {
         "key": "ctrl+=",
         "command": "expand-selection-to-scope.expand",
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "cmd+l",
+        "command": "composerMode.chat"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.focusNextGroup"
     },
 ]
