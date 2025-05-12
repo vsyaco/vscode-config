@@ -1,7 +1,7 @@
 [
     {
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+g",
+        "key": "ctrl+g"
     },
     {
         "command": "workbench.scm.focus",
