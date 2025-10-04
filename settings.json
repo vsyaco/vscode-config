@@ -1,9 +1,9 @@
 {
+    "sonarlint.disableTelemetry": true,
+    "telemetry.telemetryLevel": "off",
     "window.zoomLevel": 1,
     "window.commandCenter": false,
     "editor.fontSize": 16,
-    //"http.proxy": "http://user:password@host:port",
-    "telemetry.telemetryLevel": "off",
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
     "editor.lineNumbers": "relative",
@@ -305,5 +305,31 @@
     ],
     "projectManager.filterOnFullPath": true,
     "projectManager.git.maxDepthRecursion": 3,
-    "workbench.editor.showTabs": "single"
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path-mac": "/Users/vsyaco/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+    },
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "docker-desktop"
+    ],
+    "workbench.colorTheme": "Default Light Modern",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
 }
